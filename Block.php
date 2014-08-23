@@ -54,6 +54,24 @@ class Block extends Widget
     }
 
     /**
+     * Check if block have registered content to show
+     * ```php
+     *  <?php if (Block::exists('sidebar')):?>
+     *      <?php echo Block::show('sidebar')?>
+     *  <?php else:?>
+     *      <h3>Sidebar is empty</h3>
+     *  <?php endif?>
+     * ```
+     *
+     * @param string $block Block name
+     * @return bool
+     */
+    public static function exists($block)
+    {
+        return isset(self::$blocks[$block]);
+    }
+
+    /**
      * Append content to block
      *
      * @param string $block Block name

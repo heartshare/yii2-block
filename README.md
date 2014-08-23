@@ -26,6 +26,17 @@ In template:
 </div>
 ```
 
+or if you want to show stub for empty block:
+
+```php
+<?php if (Block::exists('sidebar')):?>
+    <?php echo Block::show('sidebar')?>
+<?php else:?>
+    <h3>Sidebar is empty</h3>
+<?php endif?>
+```
+
+
 ##License
 
 BSD-3-Clause
