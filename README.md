@@ -2,6 +2,26 @@
 
 Easy way to embed some code to template.
 
+
+##Installation
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```
+php composer.phar require --prefer-dist asdf-studio/yii2-block "*"
+```
+
+or add
+
+```
+"asdf-studio/yii2-block": "*"
+```
+
+to the require section of your `composer.json` file.
+
+
 ##Usage
 
 ```php
