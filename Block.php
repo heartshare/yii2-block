@@ -29,6 +29,10 @@ class Block extends Widget
      */
     public function run()
     {
+        if (!isset(self::$blocks[$this->block])) {
+            return null;
+        }
+
         $out = '';
         foreach (self::$blocks[$this->block] as $content) {
             $out .= $content;
