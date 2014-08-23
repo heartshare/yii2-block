@@ -1,6 +1,6 @@
 {
     "name": "asdf-studio/yii2-block",
-    "description": "Admin module for Yii2 framework",
+    "description": "Yii2 blocks",
     "license": "BSD-3-Clause",
     "homepage": "http://asdf-studio.net/docs/yii2-block",
     "type": "yii2-extension",
